@@ -1,6 +1,6 @@
 export const getTabs = (data) => {
   
-  return {
+  return {                                 //redux store setting data in store 
     type: 'getTabs',
     payload: "getTabs"
   }

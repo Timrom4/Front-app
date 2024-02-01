@@ -1,7 +1,7 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 
 const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://json.ffwagency.md/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://json.ffwagency.md/' }), //api coling forget data
   endpoints: (builder) => ({
 
     getTabs: builder.query({

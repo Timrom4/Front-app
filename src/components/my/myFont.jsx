@@ -3,7 +3,7 @@ import { tabsApi } from '../service/apiSlice';
 import './style.css';
 
 function MyFont() {
-  const { data, isLoading } = tabsApi.useGetFont_AQuery();
+  const { data, isLoading } = tabsApi.useGetFont_AQuery(); //component my fones
   const [activeIndex, setActiveIndex] = useState();
   useEffect(() => { }, [data]);
 

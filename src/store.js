@@ -3,14 +3,14 @@ import { createStore } from 'redux';
 import { applyMiddleware } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
 
-const initialState = [];
+const initialState = []; //enition value of the store
 
 // const store = createStore(reducer, applyMiddleware(thunk));
 const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 
-function reducer(state = initialState, action) {
+function reducer(state = initialState, action) {          //reducer to action payload
     console.log(action)
     switch (action.type) {
         case "getTabs":

@@ -3,7 +3,7 @@ import { tabsApi } from "../service/apiSlice";
 import "./style.css"
 
 function BuyFont() {
-    const { data, isLoading } = tabsApi.useGetFont_BQuery();
+    const { data, isLoading } = tabsApi.useGetFont_BQuery(); //component buy fones 
 
     useEffect(() => {
     }, [data])
